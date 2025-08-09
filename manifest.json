@@ -1,0 +1,140 @@
+{
+    "name": "ScanzoQR - Secure Offline QR Sharing",
+    "short_name": "ScanzoQR",
+    "description": "Generate and scan QR codes with password protection, completely offline with beautiful mixed themes",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#0D1117",
+    "theme_color": "#FF6B35",
+    "orientation": "portrait-primary",
+    "scope": "./",
+    "lang": "en",
+    "dir": "ltr",
+    "icons": [
+        {
+            "src": "./icons/icon-72.png",
+            "sizes": "72x72",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "./icons/icon-96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "./icons/icon-128.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "./icons/icon-144.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "./icons/icon-152.png",
+            "sizes": "152x152",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "./icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "./icons/icon-384.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "./icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable any"
+        }
+    ],
+    "categories": ["utilities", "productivity", "photo"],
+    "screenshots": [
+        {
+            "src": "./screenshots/mobile-1.png",
+            "sizes": "390x844",
+            "type": "image/png",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "./screenshots/desktop-1.png",
+            "sizes": "1920x1080",
+            "type": "image/png",
+            "form_factor": "wide"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Generate QR Code",
+            "short_name": "Generate",
+            "description": "Create a new QR code instantly",
+            "url": "./#generate",
+            "icons": [
+                {
+                    "src": "./icons/icon-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Scan QR Code",
+            "short_name": "Scan",
+            "description": "Scan QR code with camera",
+            "url": "./#scan",
+            "icons": [
+                {
+                    "src": "./icons/icon-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "View History",
+            "short_name": "History",
+            "description": "View saved QR codes",
+            "url": "./#history",
+            "icons": [
+                {
+                    "src": "./icons/icon-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ],
+    "share_target": {
+        "action": "./",
+        "method": "GET",
+        "params": {
+            "title": "title",
+            "text": "text",
+            "url": "url"
+        }
+    },
+    "protocol_handlers": [
+        {
+            "protocol": "web+qr",
+            "url": "./#scan?data=%s"
+        }
+    ],
+    "edge_side_panel": {
+        "preferred_width": 480
+    },
+    "launch_handler": {
+        "client_mode": "navigate-existing"
+    }
+}
